@@ -59,12 +59,3 @@ p {
     font-size: 1rem;
     color: #e7dada;
 }
-@keyframes correctGuess {
-    0% { background-color: white; }
-    50% { background-color: lightgreen; }
-    100% { background-color: white; }
-}
-
-.correct {
-    animation: correctGuess 0.5s ease;
-}

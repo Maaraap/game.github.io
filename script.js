@@ -5,7 +5,6 @@ const message = document.getElementById('message');
 let attempts = 5;
 
 function resetGame() {
-    attempts = 5;
     document.getElementById('attempts').textContent = attempts;
     randomNumber = Math.floor(Math.random() * 100) + 1;
     message.textContent = '';
@@ -21,7 +20,7 @@ submitGuess.addEventListener('click', () => {
         if (userGuess === randomNumber) {
             message.textContent = 'Selamat! Tebakkan kamu benar!';
             message.style.color = 'green';
-            resetGame();
+            
         } else if (userGuess < randomNumber) {
             message.textContent = 'Terlalu rendah! NT Coba lagi.';
             message.style.color = 'orange';
