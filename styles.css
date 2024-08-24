@@ -42,7 +42,7 @@ input[type="number"] {
 button {
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: #7c8594;
+    background-color: #0056b3;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -51,11 +51,20 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #99adc2;
 }
 
 p {
     margin-top: 20px;
     font-size: 1rem;
     color: #e7dada;
+}
+@keyframes correctGuess {
+    0% { background-color: white; }
+    50% { background-color: lightgreen; }
+    100% { background-color: white; }
+}
+
+.correct {
+    animation: correctGuess 0.5s ease;
 }
