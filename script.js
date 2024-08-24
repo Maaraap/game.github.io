@@ -4,7 +4,7 @@ const submitGuess = document.getElementById('submitGuess');
 const message = document.getElementById('message');
 
 submitGuess.addEventListener('click', () => {
-    
+    const userGuess = parseInt(guessInput.value);
     if (userGuess === randomNumber) {
         message.textContent = 'Selamat! Tebakkan kamu benar!';
         message.style.color = 'green';
