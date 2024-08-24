@@ -5,6 +5,7 @@ const message = document.getElementById('message');
 let attempts = 5;
 
 function resetGame() {
+    attempts = 5;
     document.getElementById('attempts').textContent = attempts;
     randomNumber = Math.floor(Math.random() * 100) + 1;
     message.textContent = '';
